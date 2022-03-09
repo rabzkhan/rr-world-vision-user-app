@@ -7,18 +7,18 @@ class BannerModel {
   String updatedAt;
   String url;
   String resourceType;
-  int resourceId;
+  String resourceId;
 
   BannerModel(
       {this.id,
-        this.photo,
-        this.bannerType,
-        this.published,
-        this.createdAt,
-        this.updatedAt,
-        this.url,
-        this.resourceType,
-        this.resourceId});
+      this.photo,
+      this.bannerType,
+      this.published,
+      this.createdAt,
+      this.updatedAt,
+      this.url,
+      this.resourceType,
+      this.resourceId});
 
   BannerModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];

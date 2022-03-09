@@ -20,7 +20,7 @@ class TopSellerProvider extends ChangeNotifier {
       ApiResponse apiResponse = await topSellerRepo.getTopSeller();
       if (apiResponse.response != null &&
           apiResponse.response.statusCode == 200 &&
-          apiResponse.response.data.toString() != '{}') {
+          apiResponse.response.data != '{}') {
         _topSellerList.clear();
         apiResponse.response.data.forEach((category) =>
             _topSellerList.add(TopSellerModel.fromJson(category)));

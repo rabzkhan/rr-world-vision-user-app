@@ -152,14 +152,13 @@ class BannersView extends StatelessWidget {
                                         .getProductDetails(
                                             context,
                                             bannerProvider.mainBannerList[index]
-                                                .resourceId
-                                                .toString());
-                                    _clickBannerRedirect(
-                                        context,
-                                        bannerProvider
-                                            .mainBannerList[index].resourceId,
-                                        bannerProvider.mainBannerList[index]
-                                            .resourceType);
+                                                .resourceId);
+                                    // _clickBannerRedirect(
+                                    //     context,
+                                    //     bannerProvider
+                                    //         .mainBannerList[index].resourceId,
+                                    //     bannerProvider.mainBannerList[index]
+                                    //         .resourceType);
                                   },
                                   child: Container(
                                     decoration: BoxDecoration(
@@ -245,14 +244,13 @@ class BannersView extends StatelessWidget {
                                 .getProductDetails(
                                     context,
                                     footerBannerProvider
-                                        .mainBannerList[index].resourceId
-                                        .toString());
-                            _clickBannerRedirect(
-                                context,
-                                footerBannerProvider
-                                    .mainBannerList[index].resourceId,
-                                footerBannerProvider
-                                    .mainBannerList[index].resourceType);
+                                        .mainBannerList[index].resourceId);
+                            // _clickBannerRedirect(
+                            //     context,
+                            //     footerBannerProvider
+                            //         .mainBannerList[index].resourceId,
+                            //     footerBannerProvider
+                            //         .mainBannerList[index].resourceType);
                           },
                           child: Padding(
                             padding:
